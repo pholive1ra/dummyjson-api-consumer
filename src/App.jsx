@@ -11,7 +11,7 @@ function App() {
       .get(`https://dummyjson.com/products/search?q=${search}`)
       .then((res) => {
         setProducts(res.data.products);
-      }) //Estudar esse código
+      }) 
       .catch((err) => {
         console.error("Erro ao buscar país:", err);
       });
